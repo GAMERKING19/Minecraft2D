@@ -21,6 +21,35 @@ public class Advanced_Player_movement : MonoBehaviour
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"),0f,0f);
 
         transform.position += movement * Time.deltaTime * moveSpeed;
+
+
+        
+
+
+        if(Input.GetAxis("Horizontal") < 0){
+
+
+            transform.eulerAngles = new Vector3(0, 0, 0);
+
+            
+
+
+
+
+
+        }
+
+
+        if(Input.GetAxis("Horizontal") > 0){
+
+           
+            transform.eulerAngles = new Vector3(0, 180, 0);
+
+
+
+        }
+        
+
     }
 
 
