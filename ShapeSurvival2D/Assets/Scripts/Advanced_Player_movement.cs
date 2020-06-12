@@ -30,7 +30,7 @@ public class Advanced_Player_movement : MonoBehaviour
     {
         if (Input.GetKey("space") && is_grounded == true)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jump_force), ForceMode2D.Impulse);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f, jump_force) , ForceMode2D.Impulse);
         }
-    }
+    } 
 }
